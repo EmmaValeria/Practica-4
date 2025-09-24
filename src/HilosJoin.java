@@ -16,9 +16,9 @@ public class HilosJoin extends Thread {
         for (int i = 0; i < 4; i++) {
             // Imprimir en pantalla el estado del hilo en cada ciclo
             System.out.println("Proceso " + getName() +
-                    " | Tipo: " + tipo +
-                    " | Prioridad: " + prioridad +
-                    " | Ciclo: " + i);
+                               " | Tipo: " + tipo +
+                               " | Prioridad: " + prioridad +
+                               " | Ciclo: " + i);
             try {
                 // sleep(ms) pausa el hilo actual por 400 ms
                 // Es de ayuda para simular espera
@@ -63,7 +63,7 @@ public class HilosJoin extends Thread {
         // Inicio del proceso Antivirus
         antivirus.start();
         try {
-            // Una vez que termine "Antivirus" comenzará con los siguientes procesos
+            // Una vez que termine Antivirus comenzará con los siguientes procesos
             antivirus.join();
         } catch (InterruptedException e){
             e.printStackTrace();
