@@ -35,7 +35,7 @@ public class ProcesoHilo extends Thread{
 
     // Sobreescribir el method run()
     public void run() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 1; i <= 5; i++) {
             // Imprimir en pantalla el estado del hilo en cada ciclo
             System.out.println("Proceso: " + getName() +
                     " | Tamaño: " + tamano + "MB" +
